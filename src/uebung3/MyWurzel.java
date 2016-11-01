@@ -8,6 +8,7 @@ public class MyWurzel {
 		for (; result < n; sqr++) {
 			result = sqr * sqr;
 		}
+		sqr--;
 		if (result == n) {
 			return "Die Wurzel aus " + n + " ist " + sqr;
 		} else {
