@@ -2,7 +2,7 @@ package uebung3;
 
 import org.junit.Test;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 /**
  * @author Thomas
