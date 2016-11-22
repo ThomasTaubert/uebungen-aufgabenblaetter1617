@@ -15,6 +15,8 @@ package gridworld.firstProject;
  * @author Cay Horstmann
  */
 
+import java.awt.Color;
+
 import gridworld.framework.actor.ActorWorld;
 import gridworld.framework.actor.Bug;
 import gridworld.framework.actor.Rock;

@@ -1,7 +1,14 @@
 package aufgabenblatt3;
 
-class ImmutableRational {
+final class ImmutableRational extends Rational {
 
-	// TODO fuelle diese Klasse mit den Methoden von Aufgabenblatt 3
-	
+	ImmutableRational(int zaehler, int nenner) {
+		super(zaehler, nenner);
+	}
+
+	Rational reduceReturn() {
+		int ggt = ggt(this.getZaehler(), this.getNenner());
+		return new Rational(this.getZaehler() / ggt, this.getNenner() / ggt);
+	}
+
 }
