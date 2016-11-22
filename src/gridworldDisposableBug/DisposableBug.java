@@ -1,4 +1,4 @@
-package disposableBug;
+package gridworldDisposableBug;
 
 import java.awt.Color;
 
