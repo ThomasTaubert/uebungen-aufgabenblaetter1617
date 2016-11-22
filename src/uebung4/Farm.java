@@ -19,14 +19,16 @@ class Farm {
 		Farmer farmer1 = new Farmer("Max");
 		System.out.println(Farmer.farmerCounter);
 		
-		System.out.println(cow2.getName()+cow2.getHungry());
+		System.out.println(cow2.getName()+" Hungrig: "+cow2.isHungry());
 		cow2.hunger();
-		System.out.println(cow2.getName()+cow2.getHungry());
+		System.out.println(cow2.getName()+" Hungrig: "+cow2.isHungry());
 		farmer1.feedCow(cow2);
-		System.out.println(cow2.getName()+cow2.getHungry());
+		System.out.println(cow2.getName()+" Hungrig: "+cow2.isHungry());
 		
 		cow3.giveBirth("Bernhard");
-//		System.out.println(calf1.getName());
+		Calf calf1 = cow3.giveBirth("Bernhard");
+		System.out.println(calf1.getName() +" Hungrig: "+calf1.isHungry()+" Mother: "+calf1.getMother());
+		
 		
 	}
 

@@ -3,8 +3,16 @@ package uebung4;
 class Calf extends Cow {
 	private String mother;
 	
+	public String getMother() {
+		return mother;
+	}
+
+	public void setMother(String mother) {
+		this.mother = mother;
+	}
+
 	Calf(String name, String mother){
 		super (name);
-		this.mother = mother;
+		this.setMother(mother);
 	}
 }

@@ -16,14 +16,14 @@ class Cow {
 	}
 
 	void toggle() {
-		if (this.getHungry()) {
+		if (this.isHungry()) {
 			this.setHungry(false);
 		} else {
 			this.setHungry(true);
 		}
 	}
 
-	public Boolean getHungry() {
+	public Boolean isHungry() {
 		return hungry;
 	}
 
@@ -35,8 +35,8 @@ class Cow {
 		this.setHungry(true);
 	}
 	
-	void giveBirth(String nameCalf){
-		Calf calf1 = new Calf(nameCalf ,this.name);
+	Calf giveBirth(String nameCalf){
+		return new Calf(nameCalf ,this.name);
 		
 	}
 
