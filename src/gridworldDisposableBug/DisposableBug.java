@@ -16,7 +16,7 @@ public class DisposableBug extends Bug {
 	public void act() {
 		super.act();
 		life++;
-		System.out.println(life);
+//		System.out.println(life);
 		if (life >= 25 && Math.random() <= 0.8) {
 			this.removeSelfFromGrid();
 		}
