@@ -1,6 +1,9 @@
 package aufgabenblatt2;
 
 public class Euler {
+	
+	//Gute Lösung für myExp :) Bei der Implementierung der schnelleren Variante scheint 
+	//es Unklarheiten zu geben - ich werde zeitnah eine Musterlösung in das Repository stellen.
 
 	public static void main(String[] args) {
 
@@ -24,7 +27,7 @@ public class Euler {
 		for (int ii = 1; ii < i; ii++) {
 			fakultaet *= (ii + 1);
 		}
-		;
+		;			//unnötig
 		return fakultaet;
 	}
 
