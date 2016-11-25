@@ -1,6 +1,10 @@
 package aufgabenblatt3;
 
 class Rational {
+	
+	//Sehr gut. Nur wenige klitzekleine Anmerkungen (keine Fehler :) Generell als Anmerkungen, dass
+	//du die setter nur bei "Zugriff von außen", z.B. innerhalb deiner main benötigst. Innerhalb der 
+	//eigenen Methoden kannst du immer this.xyz=abc; verwenden, ganz ohne setter.
 
 	public static void main(String[] args) {
 		Rational rat1 = new Rational();
@@ -27,8 +31,8 @@ class Rational {
 	private int nenner;
 
 	Rational() {
-		this.setZaehler(0);
-		this.setNenner(1);
+		this.setZaehler(0);	//Du kannst beim Konstruktor und innerhalb der eigenen Methoden immer
+		this.setNenner(1);	// this.Nenner = ... benutzen. die setMethode ist wirklich nur für den Zugriff von außen.
 	}
 
 	Rational(int zaehler, int nenner) {
@@ -99,6 +103,7 @@ class Rational {
 		return aa;
 	}
 
+	//Wenn du den Zähler zuerst setzt sparst du dir die temp Variable altNenner ;)
 	void add(Rational summand) {
 		int altNenner = this.getNenner();
 		this.setNenner(this.getNenner() * summand.getNenner());
