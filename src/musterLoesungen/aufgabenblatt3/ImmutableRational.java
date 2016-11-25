@@ -1,4 +1,4 @@
-package musterLösungen.aufgabenblatt3;
+package musterLoesungen.aufgabenblatt3;
 
 class ImmutableRational {
 
@@ -16,7 +16,7 @@ class ImmutableRational {
 	}
 
 	public static void main(String[] args) {
-		ImmutableRational r = new ImmutableRational(6,4);
+		ImmutableRational r = new ImmutableRational(6, 4);
 		r.printRational();
 		r.reduce().printRational();
 		r.add(new ImmutableRational(3, 8)).printRational();
@@ -28,7 +28,6 @@ class ImmutableRational {
 		System.out.println(zaehler + "/" + nenner);
 	}
 
-	
 	private ImmutableRational negate() {
 		return new ImmutableRational(this.zaehler * -1, this.nenner);
 	}
