@@ -1,4 +1,4 @@
-package uebung1.helloworld;
+package uebung1_helloworld;
 
 public class HelloWorld {
   

@@ -1,4 +1,4 @@
-package uebung3;
+package uebung3_Taschenrechner;
 
 //import static org.junit.Assert.*;
 
