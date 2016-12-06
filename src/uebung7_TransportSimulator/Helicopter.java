@@ -79,11 +79,11 @@ public class Helicopter implements CanMoveVertically, CanMoveHorizontally {
 		this.setZ(this.getZ() + this.getSpeedVertical());
 		this.setX(this.getX() + Math.cos(this.getDirection()));
 		this.setY(this.getY() + Math.sin(this.getDirection()));
-		if (this.getZ()<0){
+		if (this.getZ() < 0) {
 			this.setZ(0);
 			this.setSpeedHorizontal(0);
 			this.setSpeedVertical(0);
-			System.err.println("Helicopter made securitylanding.");
+			System.err.println(this.getName() + " made securitylanding.");
 		}
 	}
 

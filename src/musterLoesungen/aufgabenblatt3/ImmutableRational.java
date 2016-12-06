@@ -28,6 +28,39 @@ class ImmutableRational {
 		System.out.println(zaehler + "/" + nenner);
 	}
 
+=======
+package musterLösungen.aufgabenblatt3;
+
+class ImmutableRational {
+
+	private int zaehler;
+	private int nenner;
+
+	public ImmutableRational() {
+		zaehler = 0;
+		nenner = 1;
+	}
+
+	public ImmutableRational(int zaehler, int nenner) {
+		this.zaehler = zaehler;
+		this.nenner = nenner;
+	}
+
+	public static void main(String[] args) {
+		ImmutableRational r = new ImmutableRational(6,4);
+		r.printRational();
+		r.reduce().printRational();
+		r.add(new ImmutableRational(3, 8)).printRational();
+		r.invert().printRational();
+		r.negate().printRational();
+	}
+
+	private void printRational() {
+		System.out.println(zaehler + "/" + nenner);
+	}
+
+	
+>>>>>>> branch 'master' of https://github.com/TUB-VSP-AIfI/uebungen-aufgabenblaetter1617.git
 	private ImmutableRational negate() {
 		return new ImmutableRational(this.zaehler * -1, this.nenner);
 	}
