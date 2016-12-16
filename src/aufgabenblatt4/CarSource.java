@@ -5,8 +5,14 @@ import gridworld.framework.grid.Grid;
 import gridworld.framework.grid.Location;
 
 public class CarSource extends Actor {
+	
+	//Gut.
+	
 	private double wahrscheinlichkeit;
 
+	//Im Konstruktor benötigst du keinen Setter, du kannst die variable in der eigenen Klasse
+	//immer direkt ansprechen: this.wahrscheinlichkeit=Math.random(); Für die direction ist der
+	//Setter richtig, da sie eine private Variable der Actor-Klasse ist
 	public CarSource() {
 		super();
 		this.setDirection(Location.EAST);

@@ -6,6 +6,12 @@ import gridworld.framework.grid.Grid;
 import gridworld.framework.grid.Location;
 
 public class Car extends Actor {
+	
+	//Soweit eine gute, funktionierende Lösung. Das nutzen der Bewegungsmethode
+	// der actor-Klasse würde einiges an Code sparen. Das Bremsen war eher
+	//so gedacht, dass die speed variable auf einen Wert manipuliert wird,
+	// der beim Bewegen genau auf das Feld davor endet. (siehe Musterlösung)
+	
 	private int speed;
 
 	public int getSpeed() {
@@ -16,6 +22,8 @@ public class Car extends Actor {
 		this.speed = speed;
 	}
 
+	//Super ist an der Stelle nicht unbedingt nötig (aber auch nicht falsch)
+	//In der Actor Klasse wird im Konstruktor nichts weiter gesetzt
 	Car() {
 		super();
 		this.setSpeed(1);
