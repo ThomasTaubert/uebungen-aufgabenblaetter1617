@@ -1,4 +1,4 @@
-package uebung9_Person2;
+package uebung09_Person2;
 
 import java.util.HashMap;
 import java.util.Map;

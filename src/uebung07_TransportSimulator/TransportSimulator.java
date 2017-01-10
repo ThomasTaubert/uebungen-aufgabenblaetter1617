@@ -1,4 +1,4 @@
-package uebung7_TransportSimulator;
+package uebung07_TransportSimulator;
 
 import java.util.ArrayList;
 import java.util.List;

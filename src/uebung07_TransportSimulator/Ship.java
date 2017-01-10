@@ -1,4 +1,4 @@
-package uebung7_TransportSimulator;
+package uebung07_TransportSimulator;
 
 public class Ship implements CanMoveHorizontally {
 	private String name;

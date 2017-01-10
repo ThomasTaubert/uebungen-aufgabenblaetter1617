@@ -1,4 +1,4 @@
-package uebung7_TransportSimulator;
+package uebung07_TransportSimulator;
 
 public interface CanMoveHorizontally extends Movable {
 	public void increaseHorizontalSpeed(double by);

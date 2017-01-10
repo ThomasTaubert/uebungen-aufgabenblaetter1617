@@ -1,4 +1,4 @@
-package uebung3_Taschenrechner;
+package uebung03_Taschenrechner;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import org.junit.Assert;
 public class MyWurzelTest {
 
 	/**
-	 * Test method for {@link uebung3_Taschenrechner.MyWurzel#sqrt(int)}.
+	 * Test method for {@link uebung03_Taschenrechner.MyWurzel#sqrt(int)}.
 	 */
 	@Test
 	public void testSqrt() {

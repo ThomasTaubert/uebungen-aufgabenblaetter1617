@@ -1,4 +1,4 @@
-package uebung7_TransportSimulator;
+package uebung07_TransportSimulator;
 
 public interface Movable {
 	public void move();

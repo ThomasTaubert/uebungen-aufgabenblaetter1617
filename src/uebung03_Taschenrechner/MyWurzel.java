@@ -1,4 +1,4 @@
-package uebung3_Taschenrechner;
+package uebung03_Taschenrechner;
 
 public class MyWurzel {
 

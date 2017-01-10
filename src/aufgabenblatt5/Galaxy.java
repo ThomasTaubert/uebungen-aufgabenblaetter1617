@@ -21,22 +21,22 @@ class Galaxy {
 
 		for (int ii = 0; ii < 100; ii++) {
 			for (Iterator<GalaxyElement> it = galaxyElements.iterator(); it.hasNext();) {
-				GalaxyElement galEl = it /*
-											 * wie bekomme ich hier das aktuelle
-											 * Obkejt, auf das der Iterator
-											 * zeigt???
-											 */;
-				if (galEl instanceof Moveable) {
-					((Moveable) galEl).move();
-				}
-				if (galEl instanceof Destroyable) {
-					((Destroyable) galEl).hit(Math.random() * 25);
-					if (((Destroyable) galEl).isDestroyed()) {
-						System.out.println(galEl.getName() + " is destroyed.");
-						it.remove();
-					}
-				}
-				it.next();
+//				GalaxyElement galEl = it /*
+//											 * wie bekomme ich hier das aktuelle
+//											 * Obkejt, auf das der Iterator
+//											 * zeigt???
+//											 */;
+//				if (galEl instanceof Moveable) {
+//					((Moveable) galEl).move();
+//				}
+//				if (galEl instanceof Destroyable) {
+//					((Destroyable) galEl).hit(Math.random() * 25);
+//					if (((Destroyable) galEl).isDestroyed()) {
+//						System.out.println(galEl.getName() + " is destroyed.");
+//						it.remove();
+//					}
+//				}
+//				it.next();
 			}
 			System.out.println(galaxyElements);
 		}

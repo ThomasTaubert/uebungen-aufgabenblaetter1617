@@ -1,4 +1,4 @@
-package uebung7_TransportSimulator;
+package uebung07_TransportSimulator;
 
 public class Helicopter implements CanMoveVertically, CanMoveHorizontally {
 	private double x, y, z;

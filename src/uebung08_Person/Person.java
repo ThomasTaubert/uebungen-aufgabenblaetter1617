@@ -1,4 +1,4 @@
-package uebung8_Person;
+package uebung08_Person;
 
 import java.util.ArrayList;
 import java.util.List;

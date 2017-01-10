@@ -1,4 +1,4 @@
-package uebung4_Farm;
+package uebung04_Farm;
 
 class Farmer {
 
