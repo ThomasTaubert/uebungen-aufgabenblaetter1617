@@ -1,4 +1,4 @@
-package uebung13;
+package uebung13_RoadTrafficSimulator;
 
 public class Link {
 	
