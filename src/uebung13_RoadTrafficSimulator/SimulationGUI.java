@@ -24,6 +24,10 @@ import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 public class SimulationGUI extends Application {
+	/**
+	 * Linienliste
+	 */
+	static private Map<Integer, Line> lines = new HashMap<>();
 
 	/**
 	 * 
@@ -63,7 +67,10 @@ public class SimulationGUI extends Application {
 			public void handle(ActionEvent event) {
 				sim.increaseTrafficVolume();
 				sim.calcLinkOccupation();
-				for (Link line : lines.values()) {
+				for (Line line : lines.values()) {
+
+					line.setStroke(Color.BLACK);
+					line.setStrokeWidth(1);
 
 				}
 			}
@@ -87,19 +94,16 @@ public class SimulationGUI extends Application {
 		 * Netz zeichnen
 		 */
 		Pane simPane = new Pane();
-		Map<Integer, Line> lines = new HashMap<>();
+
 		Integer ii = 1;
 		for (Link link : sim.getLinks().values()) {
 			// Create line shape
 			Line line = new Line(link.getStartNode().getCoordinateX(), link.getStartNode().getCoordinateY(),
 					link.getEndNode().getCoordinateX(), link.getEndNode().getCoordinateY());
-			if (link.getOccupation() < 1) {
-				line.setStroke(Color.BLACK);
-				line.setStrokeWidth(1);
-			} else {
-				line.setStroke(Color.RED);
-				line.setStrokeWidth(1/* link.getOccupation() */);
-			}
+
+			line.setStroke(Color.BLACK);
+			line.setStrokeWidth(1);
+
 			lines.put(ii++, line);
 			simPane.getChildren().add(line);
 		}
