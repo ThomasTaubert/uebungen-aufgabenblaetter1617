@@ -1,14 +1,25 @@
 package aufgabenblatt5;
 
 public final class Planet extends GalaxyElement implements Moveable {
+	
+	//Richtig, wieder kleine Anmerkung unten
+	
+	
 	/**
 	 * Variablendefinition Erweiterung
 	 */
 	private Sun sun;
 	private Double distanceSun = -1.;
+	
+	//die Variablendefinition als Konstante am besten static machen,
+	//ansonsten hat jedes Objekt vom Typ Planet dieselbe Konstante 
+	//extra fuer sich gespeichert. Konstantennamen nach Konvention
+	//grossgeschrieben: ANGLE_SPEED
 	private final Double angleSpeed = Math.PI / 4;
 	private Double angle = 0.;
 
+	
+	//Getter nicht notwendig
 	/**
 	 * Getters/Setters
 	 */
@@ -81,7 +92,7 @@ public final class Planet extends GalaxyElement implements Moveable {
 	 * Moveable
 	 */
 	public void move() {
-		// prüfen, ob sich Planet an richtiger Position befindet
+		// prÃ¼fen, ob sich Planet an richtiger Position befindet
 		// if (this.getLocX() == this.getSun().getLocX() + this.getDistanceSun()
 		// * Math.sin(this.getAngle())
 		// && this.getLocY() == this.getSun().getLocY() + this.getDistanceSun()
