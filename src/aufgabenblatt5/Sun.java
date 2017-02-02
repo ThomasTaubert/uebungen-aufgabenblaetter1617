@@ -1,6 +1,8 @@
 package aufgabenblatt5;
 
 public final class Sun extends GalaxyElement {
+	
+	//Richtig (kleine Anmkerkung unten)
 
 	/**
 	 * Konstruktoren
@@ -12,6 +14,9 @@ public final class Sun extends GalaxyElement {
 	public Sun(String name, Double size, Double locationX, Double locationY) {
 		super(name, size, locationX, locationY);
 	}
+	
+	//hier sollte noch die toString-Methode der Oberklasse aufgerufen werden, 
+	//dann haettest du ein wenig Code Dopplung gespart
 
 	/**
 	 * toString
