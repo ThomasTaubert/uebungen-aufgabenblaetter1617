@@ -1,6 +1,9 @@
 package aufgabenblatt5;
 
 public final class SpaceShip extends GalaxyElement implements Moveable, Destroyable {
+	
+	//Richtig
+	
 	/**
 	 * Variablendefinition
 	 */
