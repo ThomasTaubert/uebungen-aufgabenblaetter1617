@@ -4,12 +4,17 @@ public class GalaxyElement {
 	/**
 	 * Variablendeklaration mit Default-Werten
 	 * 
-	 * Was ist hier mit "für erbende Klassen veränderbar" gemeit sein?
+	 * Was ist hier mit "fÃ¼r erbende Klassen verÃ¤nderbar" gemeit sein?
 	 * 
-	 * Sollen (nur) diese Klassen direkt auf die Werte zugreifen können -dann
-	 * default- oder sollen sie in erbenden Klassen veränderbar sein -also nicht
+	 * Sollen (nur) diese Klassen direkt auf die Werte zugreifen kÃ¶nnen -dann
+	 * default- oder sollen sie in erbenden Klassen verÃ¤nderbar sein -also nicht
 	 * final, aber private-?
 	 */
+	
+	//Damit ist gemeint, dass nur erbende Klassen vollen Zugriff auf die Variablen haben sollen.
+	//Alle anderen sollen nur Lesezugriff Ã¼ber Getter bereitgestellt bekommen.
+	//Der richtige access modifier dafuer ist protected (default ist package only, wuerde
+	//in diesem Spezialfall, in dem alles im selben package ist, dasselbe tun - von der Theorie her aber restriktiver)
 
 	private Double locX = 1., locY = 1.;
 	private Double size = 1.;
@@ -20,6 +25,9 @@ public class GalaxyElement {
 		return locX;
 	}
 
+	//Es sollten nur Getter als Zugriffsrecht implementiert werden
+	//Willst du trotzdem Setter in dieser Klasse verwenden,
+	//dann besser private
 	public void setLocX(Double locX) {
 		this.locX = locX;
 	}
